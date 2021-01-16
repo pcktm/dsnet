@@ -68,6 +68,13 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Network limits info</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
@@ -100,9 +107,15 @@
 					<div class="tsd-signature tsd-kind-icon">current<wbr>Multiplier<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in types.ts:77</li>
+							<li>Defined in <a href="https://github.com/pcktm/dsnet/blob/189ea7f/src/types.ts#L94">types.ts:94</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Download gets multipied by this ammount to calculate how much of it counts towards the limit.
+							Watch out: <strong>can be bigger than one!</strong></p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="download" class="tsd-anchor"></a>
@@ -110,9 +123,14 @@
 					<div class="tsd-signature tsd-kind-icon">download<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>limit<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>used<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>all<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>limited<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in types.ts:70</li>
+							<li>Defined in <a href="https://github.com/pcktm/dsnet/blob/189ea7f/src/types.ts#L82">types.ts:82</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Download limit is calculated by multiplying the traffic with @link {currentMultipier}.</p>
+						</div>
+					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
@@ -124,9 +142,19 @@
 								<ul class="tsd-parameters">
 									<li class="tsd-parameter">
 										<h5>all<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>All downloaded data, even the one that was downloaded when @link {currentMultiplier} was 0.0</p>
+											</div>
+										</div>
 									</li>
 									<li class="tsd-parameter">
 										<h5>limited<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>Downloaded data that counts towards the limit</p>
+											</div>
+										</div>
 									</li>
 								</ul>
 							</li>
@@ -139,7 +167,7 @@
 					<div class="tsd-signature tsd-kind-icon">tenant<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in types.ts:65</li>
+							<li>Defined in <a href="https://github.com/pcktm/dsnet/blob/189ea7f/src/types.ts#L75">types.ts:75</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -149,9 +177,14 @@
 					<div class="tsd-signature tsd-kind-icon">upload<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>limit<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>used<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in types.ts:66</li>
+							<li>Defined in <a href="https://github.com/pcktm/dsnet/blob/189ea7f/src/types.ts#L77">types.ts:77</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Upload, unlike download, is always limited, no matter the hour or the weekday</p>
+						</div>
+					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">

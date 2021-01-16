@@ -20,9 +20,13 @@ declare class DSNET {
     getDormitoryFloors(dormitoryID: number): Promise<types.Floor[]>;
     /** Get list of all rooms at given floor */
     getRoomsAtFloor(floorID: number): Promise<types.Room[]>;
+    /** Returns network limits info.
+     * @see {@link NetworkInfo} for explanation
+     */
     getNetworkInfo(): Promise<types.NetworkInfo>;
+    /** Since DSNET does not provide proper datetime in API response, I'm trying to parse it manually from string. So watch out, might not be infallible. */
     getReservations(): Promise<types.Reservation[]>;
     getUserInfo(): Promise<types.UserInfo>;
-    getAccomodationInfo(): Promise<types.Accommodation>;
+    getAccommodationInfo(): Promise<types.Accommodation>;
 }
 export default DSNET;

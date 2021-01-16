@@ -58,6 +58,43 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
+				<a href="#dsnet-api-🌆" id="dsnet-api-🌆" style="color: inherit; text-decoration: none;">
+					<h1>DSNET API 🌆</h1>
+				</a>
+				<blockquote>
+					<p>A simple wrapper for AGH University of Science and Technology Dormitories API.</p>
+				</blockquote>
+				<p><a href="https://packagephobia.com/result?p=dsnet"><img src="https://packagephobia.com/badge?p=dsnet" alt="install size"></a></p>
+				<a href="#highlights" id="highlights" style="color: inherit; text-decoration: none;">
+					<h2>Highlights</h2>
+				</a>
+				<ul>
+					<li>Well <a href="https://pcktm.github.io/dsnet/classes/index.default.html">documented</a> (unlike the DSNET API itself - yeah, I&#39;m lookin&#39; at ya DSNET.)</li>
+					<li>Easy to use, asynchronous API</li>
+					<li>Full API coverage</li>
+					<li>Super lightweight</li>
+					<li>Written and typed in TypeScript</li>
+				</ul>
+				<a href="#install" id="install" style="color: inherit; text-decoration: none;">
+					<h2>Install</h2>
+				</a>
+				<pre><code><span style="color: #001080">$</span><span style="color: #000000"> </span><span style="color: #001080">npm</span><span style="color: #000000"> </span><span style="color: #001080">install</span><span style="color: #000000"> </span><span style="color: #001080">dsnet</span>
+
+</code></pre>
+				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+					<h2>Usage</h2>
+				</a>
+				<pre><code class="language-js"><span style="color: #AF00DB">import</span><span style="color: #000000"> </span><span style="color: #001080">DSNET</span><span style="color: #000000"> </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;dsnet&#039;</span><span style="color: #000000">;</span>
+
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">api</span><span style="color: #000000"> = </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #267F99">DSNET</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;OAUTH2_TOKEN&#039;</span><span style="color: #000000">);</span>
+
+<span style="color: #000000">(</span><span style="color: #0000FF">async</span><span style="color: #000000"> () </span><span style="color: #0000FF">=&gt;</span><span style="color: #000000"> {</span>
+
+<span style="color: #000000">    </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">userInfo</span><span style="color: #000000"> = </span><span style="color: #AF00DB">await</span><span style="color: #000000"> </span><span style="color: #001080">api</span><span style="color: #000000">.</span><span style="color: #795E26">getUserInfo</span><span style="color: #000000">();</span>
+
+<span style="color: #000000">})();</span>
+
+</code></pre>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">

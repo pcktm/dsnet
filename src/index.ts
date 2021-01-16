@@ -67,6 +67,9 @@ class DSNET {
     })
   }
 
+  /** Returns network limits info.
+   * @see {@link NetworkInfo} for explanation
+   */
   async getNetworkInfo(): Promise<types.NetworkInfo> {
     const res = (await axios.get(`${this.baseURL}/network/transfer`, {headers: {'Authorization':`Bearer ${this.accessToken}`}})).data;
     return {
@@ -86,6 +89,7 @@ class DSNET {
     };
   }
 
+  /** Since DSNET does not provide proper datetime in API response, I'm trying to parse it manually from string. So watch out, might not be infallible. */
   async getReservations(): Promise<types.Reservation[]> {
     const reservations = await axios.get(`${this.baseURL}/reservations/current`, {headers: {'Authorization':`Bearer ${this.accessToken}`}});
     const mappedRes = reservations.data.map((res) => {
