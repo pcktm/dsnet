@@ -1,9 +1,13 @@
 {
   "name": "dsnet",
-  "version": "1.0.0",
-  "description": "Simple wrapper for DSNET API.",
+  "version": "1.0.1",
+  "description": "A simple wrapper for AGH University of Science and Technology Dormitories API.",
   "main": "dist/index.js",
-	"module": "dist/index.esm.js",
+  "module": "dist/index.esm.js",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/pcktm/dsnet.git"
+  },
   "types": "dist/index.d.ts",
   "files": [
 		"dist/index.js",
