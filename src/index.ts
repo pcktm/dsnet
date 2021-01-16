@@ -124,7 +124,7 @@ class DSNET {
     };
   }
 
-  async getAccomodationInfo(): Promise<types.Accommodation> {
+  async getAccommodationInfo(): Promise<types.Accommodation> {
     const res = await axios.get(`${this.baseURL}/tenant/accommodation`, {headers: {'Authorization':`Bearer ${this.accessToken}`}});
     return {
       tenantId: res.data.tenant_id,
